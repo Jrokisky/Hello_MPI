@@ -1,0 +1,27 @@
+/********************************************
+ * Justin Rokisky (GK81776)
+ * Parallel Computing CMSC 691
+ * Homework 2
+ ********************************************/
+
+-------------------------Results--------------------
+  Process   |   Execution   |  Average  |  Speedup    
+   Count    |     Times     |    Time   |
+----------------------------------------------------
+     1      |   .013838     |  .013403  |  1.000
+            |   .012967     |           |
+----------------------------------------------------
+     2      |   .015777     |  .014431  |  0.929
+            |   .013084     |           |
+----------------------------------------------------
+     4      |   .009997     |  .01061   |  1.263
+            |   .011223     |           |
+----------------------------------------------------
+     8      |   .011294     |  .01554   |  0.862
+            |   .019783     |           |
+----------------------------------------------------
+     16     |   .026866     |  .02073   |  0.647
+            |   .014589     |           |
+----------------------------------------------------
+
+I chose to run these tests with a file that contained the first 65,534 sequential positive integers in a random order. I was hoping that the larger data set would result in a larger performance difference between the different process count, but this did not end up being the case as there was not that great of a difference between the execution times when using different processor counts. Based on the calculated speedup, it seems that 4 processors seems to be the sweet spot.
